@@ -67,7 +67,7 @@ The workflow consists of **three main stages**:
 1. Generate PCM Dataset (MATLAB)
 ```matlab
 cd MATLAB/PCM_Data_Generation
-run('Generate_PCM_Data.m')
+run('RelativeOrbit_kalphaHzDelta_Ergodic.m')
 ```
 
 * Outputs dataset_4to2.mat containing mappings of 4D→2D parameters. 
