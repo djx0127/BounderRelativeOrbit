@@ -99,14 +99,14 @@ Validation Results: accuracy & dispersion plots, formation trajectory visualizat
 
 ## 🧠 Key References
 If you use this code, please cite:  
-'''pgsql
+```pgsql
 @article{ding2025pcm_cvae,
   author={Jixin Ding and Ming Xu and Xue Bai and Xiaoyi Wang and Xiao Pan},
   title={Semi-analytical Bounded Formation Configuration Screening Method Based on Poincaré Contraction Mapping},
   journal={IEEE Transactions on Aerospace and Electronic Systems},
   year={2025}
 }
-'''
+```
 
 ## 📬 Contact
 Jixin Ding (丁纪昕)
