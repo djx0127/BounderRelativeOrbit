@@ -31,18 +31,18 @@ The workflow consists of **three main stages**:
 
 ## 📂 Repository Structure
 
-├── MATLAB/
-│ ├── PCM_Data_Generation/ # Step 1: Generate 4D→2D datasets via Poincaré Contraction Mapping
-│ ├── PCM_CVAE_Validation/ # Step 3: Validation, evaluation and visualization of generated configurations
-│ └── utils/ # Auxiliary MATLAB scripts and plotting functions
-│
-├── Python/
-│ ├── CVAE_Model/ # Step 2: Conditional Variational Autoencoder implementation
-│ ├── dataset_preparation.py # Data normalization, split (train/val/test)
-│ ├── train_cvae.py # Training script
-│ ├── date_generate_store.py # Data genaration and storage
-│ └── requirements.txt # Python dependencies
-│
+├── MATLAB/  
+│ ├── PCM_Data_Generation/ # Step 1: Generate 4D→2D datasets via Poincaré Contraction Mapping  
+│ ├── PCM_CVAE_Validation/ # Step 3: Validation, evaluation and visualization of generated configurations  
+│ └── utils/ # Auxiliary MATLAB scripts and plotting functions  
+│  
+├── Python/  
+│ ├── CVAE_Model/ # Step 2: Conditional Variational Autoencoder implementation  
+│ ├── dataset_preparation.py # Data normalization, split (train/val/test)  
+│ ├── train_cvae.py # Training script  
+│ ├── date_generate_store.py # Data genaration and storage  
+│ └── requirements.txt # Python dependencies  
+│  
 └── README.md
 
 
