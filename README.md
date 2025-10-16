@@ -64,44 +64,48 @@ The workflow consists of **three main stages**:
 ## 🚀 Usage
 
 1. Generate PCM Dataset (MATLAB)
-matlab:
+'''matlab
 cd MATLAB/PCM_Data_Generation
 run('Generate_PCM_Data.m')
+'''
 
 * Outputs dataset_4to2.mat containing mappings of 4D→2D parameters. 
 * The dynamic environment of the formation can be re-established. Parameters such as domain scope can be modified accordingly. 
 
 2. Train CVAE Model (Python)
-bash:
+'''bash
 cd Python
 python dataset_preparation.py
 python train_cvae.py
 python date_generate_store.py
+'''
 
 * This will train the CVAE model on the dataset and save the trained model and data to /Python/CVAE_Model/CVAEOutputData.mat
 
 3. Validate PCM-CVAE (Matlab)
-matlab:
+'''matlab
 cd MATLAB/PCM_CVAE_Validation
 run('Evaluate_CVAE_Result.m')
+'''
 
 * Evaluates configuration accuracy (σT, σΩ) and dispersion (Mahalanobis distance D).
 
 ## 📊 Outputs
-Dataset: dataset_4to2.mat
-Trained Model: CVAE_Model/saved_model.pt
-Generated Output: CVAE_Model/CVAEOutputData.mat
-Validation Results: accuracy & dispersion plots, formation trajectory visualizations.
+Dataset: dataset_4to2.mat  
+Trained Model: CVAE_Model/saved_model.pt  
+Generated Output: CVAE_Model/CVAEOutputData.mat  
+Validation Results: accuracy & dispersion plots, formation trajectory visualizations.  
 
 ## 🧠 Key References
-If you use this code, please cite:
-pgsql:
+If you use this code, please cite:  
+'''pgsql
 @article{ding2025pcm_cvae,
   author={Jixin Ding and Ming Xu and Xue Bai and Xiaoyi Wang and Xiao Pan},
   title={Semi-analytical Bounded Formation Configuration Screening Method Based on Poincaré Contraction Mapping},
   journal={IEEE Transactions on Aerospace and Electronic Systems},
   year={2025}
 }
+'''
 
 ## 📬 Contact
 Jixin Ding (丁纪昕)
