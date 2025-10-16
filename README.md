@@ -68,8 +68,8 @@ matlab:
 cd MATLAB/PCM_Data_Generation
 run('Generate_PCM_Data.m')
 
-Outputs dataset_4to2.mat containing mappings of 4D→2D parameters. 
-* The dynamic environment of the formation can be re-established. Parameters such as domain scope can be modified accordingly. *
+* Outputs dataset_4to2.mat containing mappings of 4D→2D parameters. 
+* The dynamic environment of the formation can be re-established. Parameters such as domain scope can be modified accordingly. 
 
 2. Train CVAE Model (Python)
 bash:
@@ -78,14 +78,14 @@ python dataset_preparation.py
 python train_cvae.py
 python date_generate_store.py
 
-This will train the CVAE model on the dataset and save the trained model and data to /Python/CVAE_Model/CVAEOutputData.mat
+* This will train the CVAE model on the dataset and save the trained model and data to /Python/CVAE_Model/CVAEOutputData.mat
 
 3. Validate PCM-CVAE (Matlab)
 matlab:
 cd MATLAB/PCM_CVAE_Validation
 run('Evaluate_CVAE_Result.m')
 
-Evaluates configuration accuracy (σT, σΩ) and dispersion (Mahalanobis distance D).
+* Evaluates configuration accuracy (σT, σΩ) and dispersion (Mahalanobis distance D).
 
 ## 📊 Outputs
 Dataset: dataset_4to2.mat
